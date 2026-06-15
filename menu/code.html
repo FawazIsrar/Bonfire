@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menu - Bonfire Pizza &amp; Kitchen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;600;700;800&amp;family=Manrope:wght@400;500;600&amp;family=Space+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#fffbff",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed": "#1e1b1a",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#ece8de",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#6f4600",
+                        "tertiary-container": "#787372",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#1c1c16",
+                        "on-secondary-fixed": "#2a1800",
+                        "on-background": "#1c1c16",
+                        "primary-fixed-dim": "#ffb4a2",
+                        "surface-container-highest": "#e6e2d8",
+                        "background": "#fdf9ef",
+                        "tertiary-fixed": "#e8e1df",
+                        "on-primary-fixed-variant": "#8a1c00",
+                        "inverse-on-surface": "#f4f0e7",
+                        "surface": "#fdf9ef",
+                        "on-tertiary-fixed-variant": "#4a4645",
+                        "surface-container-low": "#f7f3e9",
+                        "on-primary-fixed": "#3c0700",
+                        "surface-container": "#f1eee4",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#d2421d",
+                        "primary-fixed": "#ffdad2",
+                        "on-primary-container": "#fffbff",
+                        "outline-variant": "#e2bfb6",
+                        "tertiary": "#5f5b5a",
+                        "surface-variant": "#e6e2d8",
+                        "secondary-container": "#ffb13e",
+                        "primary": "#af2903",
+                        "on-secondary-fixed-variant": "#643f00",
+                        "secondary-fixed": "#ffddb5",
+                        "surface-bright": "#fdf9ef",
+                        "inverse-primary": "#ffb4a2",
+                        "secondary": "#845400",
+                        "surface-tint": "#b22b06",
+                        "secondary-fixed-dim": "#ffb958",
+                        "surface-dim": "#dddad0",
+                        "tertiary-fixed-dim": "#ccc5c3",
+                        "on-surface-variant": "#5a413b",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#31312a",
+                        "outline": "#8e7069",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "40px",
+                        "gutter": "20px",
+                        "md": "16px",
+                        "container-max": "1200px",
+                        "lg": "24px",
+                        "2xl": "64px",
+                        "unit": "4px",
+                        "xs": "4px",
+                        "sm": "8px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "price-display": ["Manrope"],
+                        "body-sm": ["Manrope"],
+                        "headline-sm": ["Manrope"],
+                        "label-lg": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "headline-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "price-display": ["22px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .card-hover:hover img {
+            transform: scale(1.05);
+        }
+        .hd-image {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            filter: contrast(1.08) saturate(1.05) brightness(1.02);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="bg-surface dark:bg-surface-dim full-width top-0 sticky shadow-sm z-50 transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<!-- Brand -->
+<a class="font-display-lg text-primary dark:text-primary-fixed tracking-tight flex items-center gap-xs hover:opacity-90 transition-opacity" href="../home/code.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 36px;">local_fire_department</span>
+<span>Bonfire</span>
+</a>
+<!-- Desktop Nav Links -->
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors duration-200 font-label-lg" href="../home/code.html">Home</a>
+<a class="text-primary hover:text-primary transition-colors duration-200 font-label-lg" href="../menu/code.html">Menu</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors duration-200 font-label-lg" href="../Deals/code.html">Deals</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors duration-200 font-label-lg" href="../about/code.html">About</a>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-md">
+<button class="hidden md:flex items-center justify-center bg-primary text-on-primary font-label-lg py-sm px-lg rounded-full hover:bg-surface-tint transition-colors duration-200 shadow-sm">
+                    Order Now
+                </button>
+<button class="cart-trigger text-on-surface hover:text-primary transition-colors duration-200 p-xs relative group">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="cart-badge absolute top-0 right-0 bg-primary text-on-primary text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full transform translate-x-1/4 -translate-y-1/4" style="display: none;">0</span>
+</button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface p-xs" id="mobile-menu-btn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Dropdown (Hidden by default) -->
+<div class="md:hidden hidden bg-surface-container-high absolute top-full left-0 w-full shadow-lg border-t border-outline-variant" id="mobile-menu">
+<div class="flex flex-col px-gutter py-md gap-md">
+<a class="text-on-surface font-label-lg py-xs hover:text-primary" href="../home/code.html">Home</a>
+<a class="text-primary font-label-lg py-xs" href="../menu/code.html">Menu</a>
+<a class="text-on-surface font-label-lg py-xs hover:text-primary" href="../Deals/code.html">Deals</a>
+<a class="text-on-surface font-label-lg py-xs hover:text-primary" href="../about/code.html">About</a>
+<button class="bg-primary text-on-primary font-label-lg py-sm px-lg rounded-full mt-sm w-full">Order Now</button>
+</div>
+</div>
+</nav>
+<main class="pb-2xl">
+<!-- Hero Section -->
+<section class="py-2xl px-gutter max-w-container-max mx-auto text-center relative">
+<div class="absolute inset-0 z-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at center, var(--tw-colors-primary-container) 0%, transparent 70%);"></div>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-md relative z-10">Wood-Fired Perfection</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto relative z-10">Explore our artisanal selection of premium pizzas, savory appetizers, and signature wood-fired creations.</p>
+</section>
+<!-- Appetizers Category -->
+<section class="px-gutter max-w-container-max mx-auto mb-2xl">
+<div class="flex items-center justify-between mb-lg border-b border-surface-variant pb-sm">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">APPETIZERS</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Appetizer Item 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col card-hover border border-surface-container-high group cursor-pointer">
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container relative">
+<img alt="Gourmet Chicken Sandwich" class="hd-image w-full h-full object-cover transition-transform duration-500" data-alt="A high-quality, mouth-watering close-up shot of a gourmet grilled chicken sandwich served on a wooden board. The sandwich is cut in half, revealing melted cheese, capsicum, and succulent chicken. A small side of crispy golden french fries and a ramekin of creamy dip are visible. Bright, natural lighting highlights the textures, set against a clean, warm off-white background in a modern gastropub style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJDpSE90gRK3uMFU4dk6nc4rm3SEr7KqpsX2Vi6_Pqpk8PG6R8-BvLLsX6J7iHi0CY51nbf2lPLqdRLumWyDpAvk41wdOddd7qgvxtVQCjLbJ1uj4BJh6zSC0OlWQ4NJJqvPIgLus1FwshZC-iJQrzU8xuht72Jtw1lw_DX-5AvC5uBrIT-R_NpKVKtZTK7ti8uoTk-Bk-HIG_pFImxO58un58KDlbkIAAzb2AGCttjpne7meFSMCOILzgR4jurT7xtysQjujaZWNv"/>
+</div>
+<div class="p-md flex-grow flex flex-col justify-between bg-[#fdfaf4]">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs group-hover:text-primary transition-colors">CHICKEN SANDWICH</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">Yummy Chicken, Cheese, Capsicum, Onion, Mayodip Sauce &amp; Bonfire Special Sauce with French Fries</p>
+</div>
+<div class="mt-md flex justify-between items-end">
+<span class="font-price-display text-price-display text-primary">Rs.750</span>
+<button aria-label="Add to cart" class="add-to-cart-btn text-primary hover:bg-primary-container hover:text-on-primary-container p-sm rounded-full transition-colors" data-name="Chicken Sandwich" data-price="750">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Appetizer Item 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col card-hover border border-surface-container-high group cursor-pointer">
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container relative">
+<img alt="Baked Macaroni Pasta" class="hd-image w-full h-full object-cover transition-transform duration-500" data-alt="A warm, appetizing shot of a freshly baked macaroni pasta casserole in a foil tray. The top layer features golden-brown, bubbly melted cheddar and mozzarella cheese, studded with black olives and herbs. The lighting is warm and inviting, emphasizing the rich, savory nature of the dish. Photographed from a slight overhead angle against a light, clean gastropub setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2b8dYi3PsqZE_73zNH7zWTfOH4b24RPzTWLly73Z2DOwC_nCAnsRmmb17r_8An_j1QASOfjKMnoS7UqNaYV-QH-OOyH3GpbsNU14oQTbdTE93nPrZwvoZVDOTPVX8Ra6uYU17hFOujUghQ3KdPmATMkj7hofNqRNX80jOyyXbEfmvpEH7wB5KPj78zVW67iCG9i7_-fhhnvgieb2RCIXyC9QyEoOx8MOFnfXXLr_75nNE9cMZ5eyjoTIviYNBmbD_pNbEoyVEe0b5"/>
+</div>
+<div class="p-md flex-grow flex flex-col justify-between bg-[#fdfaf4]">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs group-hover:text-primary transition-colors">MACARONI PASTA</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">We know your dreams of pasta fever. Generous arrangement of Chicken Mushrooms with special sauce topped with cheddar &amp; mozzarella</p>
+</div>
+<div class="mt-md flex justify-between items-end">
+<span class="font-price-display text-price-display text-primary">Rs.700</span>
+<button aria-label="Add to cart" class="add-to-cart-btn text-primary hover:bg-primary-container hover:text-on-primary-container p-sm rounded-full transition-colors" data-name="Macaroni Pasta" data-price="700">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Appetizer Item 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col card-hover border border-surface-container-high group cursor-pointer">
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container relative">
+<img alt="Special Platter" class="hd-image w-full h-full object-cover transition-transform duration-500" data-alt="A bountiful appetizer platter served on a rustic wooden board. It features a mix of oven-baked chicken wings, golden fried spring rolls, and a generous portion of crispy french fries. A small white bowl of creamy dipping sauce sits in the center. The photography uses soft, natural directional lighting to create an inviting, high-end casual dining aesthetic on a neutral cream surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxcNT_jDOnWdqCu8qPAkZko6UOvVNrcrrA7tEl1Upp4Rp2KeJijsoLsk06mSJhGO5sMqJmHn5FDiR6ea1dGa216qC6PWJIs9ppe_sH87D27Qwn7uaaIbzJcviKHtsdWBqWffb6TMf6tpXpKbCNEgbUyJrgYNmHrZafN-RWr3KthB44xmkflDVzf8jsyDANZn70pdUwdyKe_FG9Zn4qFFj6Edpk4cZ7eReHzQrraksj35sxfa3g1myMvPqoKhFmVCRVgDvJfrP9F26H"/>
+</div>
+<div class="p-md flex-grow flex flex-col justify-between bg-[#fdfaf4]">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs group-hover:text-primary transition-colors">SPECIAL PLATTER</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">Our specially 6 oven baked chicken wings and 4 spin rolls, lovely portion of french fries with special mayodip sauce.</p>
+</div>
+<div class="mt-md flex justify-between items-end">
+<span class="font-price-display text-price-display text-primary">Rs.1200</span>
+<button aria-label="Add to cart" class="add-to-cart-btn text-primary hover:bg-primary-container hover:text-on-primary-container p-sm rounded-full transition-colors" data-name="Special Platter" data-price="1200">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pizza Regular Category -->
+<section class="px-gutter max-w-container-max mx-auto mb-2xl pt-lg">
+<div class="bg-inverse-surface rounded-xl p-md mb-lg flex justify-between items-center text-on-tertiary-fixed shadow-md">
+<h2 class="font-headline-lg text-headline-lg text-inverse-on-surface tracking-wide">PIZZA REGULAR</h2>
+<div class="hidden md:flex space-x-md text-inverse-on-surface font-label-lg text-label-lg">
+<span>S - RS.600</span>
+<span class="text-surface-variant">|</span>
+<span>M - RS.1150</span>
+<span class="text-surface-variant">|</span>
+<span>L - RS.1600</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-lg">
+<!-- Pizza Item 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col card-hover border border-surface-container-high group cursor-pointer">
+<div class="aspect-square w-full p-lg flex items-center justify-center bg-surface relative">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-colors-surface-variant)_0%,_transparent_70%)] opacity-30"></div>
+<img alt="Chicken Tikka Pizza" class="hd-image w-full h-full object-contain drop-shadow-xl transition-transform duration-500 z-10" data-alt="A top-down view of a perfectly round Chicken Tikka pizza served on a wooden paddle. The pizza features a golden, slightly charred crust, generous amounts of melted mozzarella, chunks of spiced chicken tikka, sliced onions, and a vibrant red chili tomato sauce base. The lighting is bright and evenly distributed, casting a soft drop shadow that makes the pizza pop against a clean, off-white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_EbYiCPNZ-oiQujWDrwoODAafCAD3KJYHR1Jiy6Gl8AhT2IKXcI5-NnxoeKrMmJF5YYl-xS0aIaKvdYYnccd-zYQUqTtobCrTtsQGukG2bKLlogCJmYPyTI1TdUi48UeB8spoZvOud42oOUsivZzzSEaXfv-JyN97Yu3wP62x9WxQfsUJ_wBZ_zCRJZ7sIkEpS0g9PafefTXxGvUMmHcdWf2JEle5ZDoFl1iMNvtfcDGR9JOFxUNxQYd2gqV4j9tOc8JMwW-gvIMg"/>
+</div>
+<div class="p-md flex-grow flex flex-col justify-between text-center border-t border-surface-container">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs group-hover:text-primary transition-colors">CHICKEN TIKKA</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant px-sm mb-sm">Special tikka boti, cheese, onion with Hot chilli tomato sauce</p>
+</div>
+<div class="flex justify-between items-center mt-auto px-md">
+<span class="font-price-display text-primary text-sm font-bold">Rs.1150 (M)</span>
+<button class="add-to-cart-btn text-primary hover:bg-primary-container hover:text-on-primary-container p-sm rounded-full transition-colors" data-name="Chicken Tikka Pizza (M)" data-price="1150">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pizza Item 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col card-hover border border-surface-container-high group cursor-pointer">
+<div class="aspect-square w-full p-lg flex items-center justify-center bg-surface relative">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-colors-surface-variant)_0%,_transparent_70%)] opacity-30"></div>
+<img alt="Chicken Fajita Pizza" class="hd-image w-full h-full object-contain drop-shadow-xl transition-transform duration-500 z-10" data-alt="An overhead shot of a savory Chicken Fajita pizza on a wooden serving paddle. The pizza is topped with an abundance of melted cheese, seasoned fajita chicken strips, green bell peppers, and sliced onions over a rich pizza sauce. The crust is thick and artisanal. The image uses a minimalist light-mode aesthetic, with the pizza centered on a warm, creamy background, emphasizing a mouth-watering texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1av4qTP1mFi-8nMWFqpzDr_-ZI8ioF5atXwTN1IVtrn791N-tqpaGCYOrM3jsYZXOmNGlc6FxILKJygxTSTLJWqSsEMEN5_yQnmfkjoWqBvWWkhUSlZw3ugsY1tS-sjavttXnA7KCCfZWtHP_XAUq_v0bwXEPP5p-U-OerShlFYeQDHTbYkZdkROrCPqJa2Ive3vE7nMJf7CyZXEyNHsPjE573kHkMEqBcUCM9dwB75jtin8FSSePEkySEoa75Uxq6_slQCIr7uTQ"/>
+</div>
+<div class="p-md flex-grow flex flex-col justify-between text-center border-t border-surface-container">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs group-hover:text-primary transition-colors">CHICKEN FAJITA</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant px-sm mb-sm">A great aroma of mexican with fajita chicken Cheese, capsicum, onion with pizza sauce</p>
+</div>
+<div class="flex justify-between items-center mt-auto px-md">
+<span class="font-price-display text-primary text-sm font-bold">Rs.1150 (M)</span>
+<button class="add-to-cart-btn text-primary hover:bg-primary-container hover:text-on-primary-container p-sm rounded-full transition-colors" data-name="Chicken Fajita Pizza (M)" data-price="1150">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pizza Item 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col card-hover border border-surface-container-high group cursor-pointer">
+<div class="aspect-square w-full p-lg flex items-center justify-center bg-surface relative">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-colors-surface-variant)_0%,_transparent_70%)] opacity-30"></div>
+<img alt="Chicken Supreme Pizza" class="hd-image w-full h-full object-contain drop-shadow-xl transition-transform duration-500 z-10" data-alt="A high-resolution, top-down photograph of a loaded Chicken Supreme pizza placed on a wooden pizza peel. The toppings include spicy smoked chicken, gooey cheese, green capsicum, red onions, black olives, and mushrooms. The crust edges are beautifully browned. Soft, studio-quality lighting highlights the freshness of the ingredients, presented against a sleek, modern light-neutral background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG6hFvocdLauVzayzFsbGGkqm3C5EslDXtWW2yK8IEcQ2L-WkZhTVBjvOjx59TDrtkmORIhQJ8KyfCKMTn6Ekr9jsAurtCPeN2ry4RwoHhmSx1JWgEKlXk1OX7dxKXbd7dfGZsCu6jg5QLYscjTGqVgvQq5Fvs2L8mweO7nWL7cDDG876ZGNQnby1Z4ioSew_8mEElkTJmzEAUiKNNyWdhGqpzuBUNLZJImjmbW7jjOhAtGy5C2PmalCecI--ggKj9k5XGTlQSN0OT"/>
+</div>
+<div class="p-md flex-grow flex flex-col justify-between text-center border-t border-surface-container">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs group-hover:text-primary transition-colors">CHICKEN SUPREME</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant px-sm mb-sm">Spicy smoked chicken, cheese, capsicum, onion Olives,mushroom with pizza sauce</p>
+</div>
+<div class="flex justify-between items-center mt-auto px-md">
+<span class="font-price-display text-primary text-sm font-bold">Rs.1150 (M)</span>
+<button class="add-to-cart-btn text-primary hover:bg-primary-container hover:text-on-primary-container p-sm rounded-full transition-colors" data-name="Chicken Supreme Pizza (M)" data-price="1150">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Promotional Banner -->
+<section class="px-gutter max-w-container-max mx-auto mb-2xl">
+<div class="bg-secondary-fixed rounded-2xl p-xl flex flex-col md:flex-row items-center justify-between shadow-md relative overflow-hidden">
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-secondary-container rounded-full opacity-50 blur-3xl"></div>
+<div class="z-10 md:w-1/2 mb-lg md:mb-0">
+<div class="inline-block bg-primary text-on-primary font-label-lg text-label-lg px-md py-xs rounded-full mb-md">SIGNATURE SQUARE</div>
+<h2 class="font-display-lg text-display-lg text-on-secondary-fixed mb-sm">EURO PIZZA</h2>
+<p class="font-body-lg text-body-lg text-on-secondary-fixed-variant mb-lg">Yummy chicken, Cheese Mozzarella &amp; Green Chilli with Mustard Sauce</p>
+<div class="flex items-center space-x-md">
+<span class="font-price-display text-[32px] text-primary">L - Rs. 1750</span>
+<button class="add-to-cart-btn bg-primary text-on-primary font-label-lg py-2 px-6 rounded-full text-sm hover:bg-surface-tint hover:-translate-y-0.5 transition-all duration-300 ml-4 shadow-sm" data-name="Euro Pizza (L)" data-price="1750">Add to Order</button>
+</div>
+</div>
+<div class="z-10 md:w-1/2 flex justify-center">
+<img alt="Square Euro Pizza" class="hd-image w-full max-w-sm rounded-xl drop-shadow-2xl border-4 border-surface-container-lowest transform rotate-3" data-alt="A striking promotional shot of a unique square-shaped Euro Pizza. The pizza features a thick, golden crust and is generously topped with diced chicken, melted mozzarella cheese, green chilies, and distinct artistic zig-zag drizzles of creamy mustard sauce across the entire surface. The pizza is presented dynamically on an angle against a warm, vibrant amber background, conveying a bold, premium gastropub offering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC25HTp9twF7RVPmm5R8tpnKomVTW4KHSw0thhjkMib7EwdrY8cVzk2JM0kRqMC35W0saIksyj4IPAuQUkrsJ3IttIF57w8IafYE0nAOmPP29ODZsgjzjNzxAADh3B1yu60g0MK0OrAncAFeHLp7o2DgTkwbWOn8em3EjZ7J4oyfIiN9LgEYcf6szx1QkbriFsR4fQRZFLQRa5upk7TMtqx3OktC7UI7SGvn2aYy-XdngFQ_SezftTvJXCBTBh9pY1EXd0qjdbW23cx"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface border-t border-outline-variant full-width pt-2xl pb-lg mt-2xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-lg px-gutter max-w-container-max mx-auto mb-xl">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1 flex flex-col items-start">
+<a class="font-headline-md text-primary dark:text-primary-fixed flex items-center gap-xs mb-md" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                    Bonfire Pizza &amp; Kitchen
+                </a>
+<p class="font-body-sm text-on-surface-variant dark:text-on-surface max-w-xs mb-md">
+                    Bringing the warmth of the hearth and the craft of modern gastropub dining straight to your table.
+                </p>
+<div class="flex gap-sm">
+<!-- Social Links from JSON -->
+<a aria-label="Facebook" class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-all hover:scale-110" href="#">
+<span class="material-symbols-outlined">face_nod</span>
+</a>
+<a aria-label="Instagram" class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-all hover:scale-110" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a aria-label="Twitter" class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-all hover:scale-110" href="#">
+<span class="material-symbols-outlined">tag</span>
+</a>
+</div>
+</div>
+<!-- Links Columns -->
+<div class="col-span-1 flex flex-col gap-sm">
+<h4 class="font-headline-sm text-on-surface mb-sm">Menu</h4>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Pizzas</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Starters</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Drinks</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Combos</a>
+</div>
+<div class="col-span-1 flex flex-col gap-sm">
+<h4 class="font-headline-sm text-on-surface mb-sm">About</h4>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Our Story</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Locations</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Contact Us</a>
+</div>
+<!-- Legal/Other Links from JSON -->
+<div class="col-span-1 flex flex-col gap-sm">
+<h4 class="font-headline-sm text-on-surface mb-sm">Legal</h4>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Privacy Policy</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="px-gutter max-w-container-max mx-auto pt-lg border-t border-outline-variant/30 text-center md:text-left">
+<p class="font-body-sm text-on-surface-variant dark:text-on-surface">
+                © 2024 Bonfire Pizza &amp; Kitchen. All rights reserved. Hearth-fired goodness daily.
+            </p>
+</div>
+</footer>
+<script>
+        // Simple mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Add subtle shadow to nav on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-md');
+                nav.classList.remove('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.classList.add('shadow-sm');
+            }
+        });
+</script>
+<script src="../cart.js"></script>
+</body></html>

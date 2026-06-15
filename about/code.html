@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About &amp; Contact - Bonfire Pizza &amp; Kitchen</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;600;700;800&amp;family=Manrope:wght@400;500;600&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hd-image {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            filter: contrast(1.08) saturate(1.05) brightness(1.02);
+        }
+    </style>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#fffbff",
+                      "on-primary": "#ffffff",
+                      "on-tertiary-fixed": "#1e1b1a",
+                      "on-error": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "surface-container-high": "#ece8de",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-container": "#6f4600",
+                      "tertiary-container": "#787372",
+                      "error-container": "#ffdad6",
+                      "on-surface": "#1c1c16",
+                      "on-secondary-fixed": "#2a1800",
+                      "on-background": "#1c1c16",
+                      "primary-fixed-dim": "#ffb4a2",
+                      "surface-container-highest": "#e6e2d8",
+                      "background": "#fdf9ef",
+                      "tertiary-fixed": "#e8e1df",
+                      "on-primary-fixed-variant": "#8a1c00",
+                      "inverse-on-surface": "#f4f0e7",
+                      "surface": "#fdf9ef",
+                      "on-tertiary-fixed-variant": "#4a4645",
+                      "surface-container-low": "#f7f3e9",
+                      "on-primary-fixed": "#3c0700",
+                      "surface-container": "#f1eee4",
+                      "on-error-container": "#93000a",
+                      "primary-container": "#d2421d",
+                      "primary-fixed": "#ffdad2",
+                      "on-primary-container": "#fffbff",
+                      "outline-variant": "#e2bfb6",
+                      "tertiary": "#5f5b5a",
+                      "surface-variant": "#e6e2d8",
+                      "secondary-container": "#ffb13e",
+                      "primary": "#af2903",
+                      "on-secondary-fixed-variant": "#643f00",
+                      "secondary-fixed": "#ffddb5",
+                      "surface-bright": "#fdf9ef",
+                      "inverse-primary": "#ffb4a2",
+                      "secondary": "#845400",
+                      "surface-tint": "#b22b06",
+                      "secondary-fixed-dim": "#ffb958",
+                      "surface-dim": "#dddad0",
+                      "tertiary-fixed-dim": "#ccc5c3",
+                      "on-surface-variant": "#5a413b",
+                      "on-tertiary": "#ffffff",
+                      "inverse-surface": "#31312a",
+                      "outline": "#8e7069",
+                      "error": "#ba1a1a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "xl": "40px",
+                      "gutter": "20px",
+                      "md": "16px",
+                      "container-max": "1200px",
+                      "lg": "24px",
+                      "2xl": "64px",
+                      "unit": "4px",
+                      "xs": "4px",
+                      "sm": "8px"
+              },
+              "fontFamily": {
+                      "display-lg": ["Manrope"],
+                      "body-md": ["Manrope"],
+                      "body-lg": ["Manrope"],
+                      "price-display": ["Manrope"],
+                      "body-sm": ["Manrope"],
+                      "headline-sm": ["Manrope"],
+                      "label-lg": ["Manrope"],
+                      "headline-lg": ["Manrope"],
+                      "headline-md": ["Manrope"]
+              },
+              "fontSize": {
+                      "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                      "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                      "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                      "price-display": ["22px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                      "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                      "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                      "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+                      "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                      "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }]
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col">
+<!-- Top Navigation Bar -->
+<nav class="bg-surface dark:bg-surface-dim full-width top-0 sticky shadow-sm z-50 transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<!-- Brand -->
+<a class="font-display-lg text-primary dark:text-primary-fixed tracking-tight flex items-center gap-xs hover:opacity-90 transition-opacity" href="../home/code.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 36px;">local_fire_department</span>
+<span>Bonfire</span>
+</a>
+<!-- Desktop Nav Links -->
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors duration-200 font-label-lg" href="../home/code.html">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors duration-200 font-label-lg" href="../menu/code.html">Menu</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors duration-200 font-label-lg" href="../Deals/code.html">Deals</a>
+<a class="text-primary hover:text-primary transition-colors duration-200 font-label-lg" href="../about/code.html">About</a>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-md">
+<button class="hidden md:flex items-center justify-center bg-primary text-on-primary font-label-lg py-sm px-lg rounded-full hover:bg-surface-tint transition-colors duration-200 shadow-sm">
+                    Order Now
+                </button>
+<button class="cart-trigger text-on-surface hover:text-primary transition-colors duration-200 p-xs relative group">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="cart-badge absolute top-0 right-0 bg-primary text-on-primary text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full transform translate-x-1/4 -translate-y-1/4" style="display: none;">0</span>
+</button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface p-xs" id="mobile-menu-btn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Dropdown (Hidden by default) -->
+<div class="md:hidden hidden bg-surface-container-high absolute top-full left-0 w-full shadow-lg border-t border-outline-variant" id="mobile-menu">
+<div class="flex flex-col px-gutter py-md gap-md">
+<a class="text-on-surface font-label-lg py-xs hover:text-primary" href="../home/code.html">Home</a>
+<a class="text-on-surface font-label-lg py-xs hover:text-primary" href="../menu/code.html">Menu</a>
+<a class="text-on-surface font-label-lg py-xs hover:text-primary" href="../Deals/code.html">Deals</a>
+<a class="text-primary font-label-lg py-xs" href="../about/code.html">About</a>
+<button class="bg-primary text-on-primary font-label-lg py-sm px-lg rounded-full mt-sm w-full">Order Now</button>
+</div>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Story Section -->
+<section class="max-w-container-max mx-auto px-gutter py-2xl">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2xl items-center">
+<div class="space-y-lg order-2 md:order-1">
+<img alt="Bonfire Pizza Logo" class="hd-image h-32 md:h-48 object-contain drop-shadow-md mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUyUlCMPfFJpbrIhDfMFn9x4av_3pgoJ5KDXKe942avPKG1eA_3-QKsmOQ0xaXf3T4oOrJnnAZ_1Y_IMVdC6bOzki94-680LtiZOuxL8gNDVJRZNqsLbqs2v9XoJabWFyW7NLBbNXfNO6hi0PfTxBZWBYW14TT1-Y0zwwZG0eJ_KqaiUvKyvzgA9Y-eE8Ios0sume1t5ZOfwepYQaFNY6jRXXGshRqkoilSXDqUceU4RszgqGKepIFJeHPOH4bq-Wpr1H2rjrR8cgL"/>
+<h1 class="font-display-lg text-display-lg text-on-background">Hearth-Fired Goodness Daily.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-prose">
+                        Born from a passion for authentic, wood-fired flavors, Bonfire Pizza &amp; Kitchen is more than just a restaurant; it's a gathering place. We believe in high-energy warmth, artisanal ingredients, and the simple joy of sharing a perfectly charred crust with friends and family. 
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-prose">
+                        Every pizza is crafted by hand and kissed by flames in our custom-built ovens, ensuring that signature tactile crunch and rich, smoky flavor profile. Welcome to our table.
+                    </p>
+</div>
+<div class="relative w-full h-[400px] md:h-[600px] rounded-2xl overflow-hidden shadow-lg order-1 md:order-2">
+<img alt="Wood fired pizza oven" class="hd-image absolute inset-0 w-full h-full object-cover" data-alt="A close-up, high-quality food photography shot of a rustic, artisanal pizza baking inside a roaring wood-fired oven. The glowing orange and red flames illuminate the blistered, charred crust of the pizza and bubbling melted cheese. The setting evokes a warm, high-energy modern gastropub kitchen. The lighting is dramatic, emphasizing the textures of the stone oven floor and the hot, tactile nature of the food against deep, smoky background shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALXIfgAaz3caUaw14-FaXZTgXniDK8dH_E4yn0OoTfNKzdvGQZorlv4g8OgVWa5-4c0SESRxQAvE8eLQkjtKlNuJzwn7f-F2HhyGKVaUnbKeZcpk8F9dBGFZ2e6jRt7yjCyqApqsDS9s3YuxBExcjTelX3dE0lnsZXibXshFLyzjvrqRurhrlVXqxIV_dM9Vd6qgB_AmIP6lqiCf9M3QXAqzAovRaSWLroShyzpoZLG3MHj7NnTtKtPxpQxoyngm9XinIF8c5brgYH"/>
+</div>
+</div>
+</section>
+<!-- Location & Contact Grid -->
+<section class="bg-surface-container-low py-2xl border-t border-surface-variant">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-xl">
+<!-- Find Us / Info -->
+<div class="lg:col-span-5 space-y-xl bg-surface p-xl rounded-2xl shadow-sm border border-outline-variant/30">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-md">Find Your Fire</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Drop by for a slice or let us bring the heat to you.</p>
+</div>
+<div class="space-y-lg">
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-background">Main Kitchen</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">123 Artisan Alley, Suite 100<br/>Flavor Town, FT 90210</p>
+</div>
+</div>
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary mt-1">schedule</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-background">Hours</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">Mon - Thu: 11:00 AM - 10:00 PM<br/>Fri - Sun: 11:00 AM - 12:00 AM</p>
+</div>
+</div>
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary mt-1">call</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-background">Call Us</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">(555) 123-FIRE</p>
+</div>
+</div>
+</div>
+<div class="mt-xl p-md bg-secondary-container/20 rounded-xl border border-secondary/20 flex items-center gap-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+<span class="font-headline-sm text-headline-sm text-on-secondary-fixed">FREE HOME DELIVERY</span>
+</div>
+</div>
+<!-- Map Image -->
+<div class="lg:col-span-7 h-[400px] lg:h-auto rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 relative">
+<img alt="Map Location" class="hd-image absolute inset-0 w-full h-full object-cover mix-blend-luminosity opacity-80 hover:opacity-100 transition-opacity duration-300" data-location="Flavor Town" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlcgLrb7CJ6mGNC5s6naWibnrTMwIQDOD15QwenoBSHXtEGpOaCXICFErcUIHKqIn6oLSNruNwFFRDqz7kqbf6QTr46hQ9wkcT_afjqiCPdzVni2OqdeMjQFypPA81-DMxeQ0O3w1vZ9TsXFCwd2SamN0NtiDYd_Cc_9EgODg2nlZZIWIHXqJo8lgGCx6aA3FJErId12Q5zrgNr9xjwcL0ZgxvgOyMdva2hS_cwm8x33e50Eof8RQ__NX-w9aMARwEFuAXBB3Yun9n"/>
+<!-- Simulated Map Pin -->
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-primary drop-shadow-md">
+<span class="material-symbols-outlined text-5xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+</div>
+<!-- Contact Form & Socials -->
+<div class="mt-2xl grid grid-cols-1 lg:grid-cols-2 gap-xl">
+<div class="bg-surface p-xl rounded-2xl shadow-sm border border-outline-variant/30">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-lg">Get in Touch</h2>
+<form class="space-y-md">
+<div>
+<label class="font-label-lg text-label-lg text-on-surface-variant block mb-sm">Name</label>
+<input class="w-full bg-background border border-outline-variant rounded-lg px-md py-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors font-body-md" placeholder="Your name" type="text"/>
+</div>
+<div>
+<label class="font-label-lg text-label-lg text-on-surface-variant block mb-sm">Email</label>
+<input class="w-full bg-background border border-outline-variant rounded-lg px-md py-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors font-body-md" placeholder="your@email.com" type="email"/>
+</div>
+<div>
+<label class="font-label-lg text-label-lg text-on-surface-variant block mb-sm">Message</label>
+<textarea class="w-full bg-background border border-outline-variant rounded-lg px-md py-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors font-body-md resize-none" placeholder="How can we help?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-lg text-label-lg px-lg py-md rounded-full hover:bg-surface-tint transition-colors mt-sm" type="submit">
+                                Send Message
+                            </button>
+</form>
+</div>
+<div class="flex flex-col justify-center items-center text-center p-xl">
+<h3 class="font-headline-md text-headline-md text-on-background mb-md">Follow the Flame</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-xl max-w-sm">
+                            Join our community online for secret menu drops, event updates, and serious pizza aesthetics.
+                        </p>
+<div class="flex gap-lg">
+<a class="w-16 h-16 rounded-full bg-surface shadow-sm border border-outline-variant/30 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all duration-300 hover:scale-110" href="#">
+<span class="material-symbols-outlined text-3xl">share</span>
+</a>
+<a class="w-16 h-16 rounded-full bg-surface shadow-sm border border-outline-variant/30 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all duration-300 hover:scale-110" href="#">
+<span class="material-symbols-outlined text-3xl">photo_camera</span>
+</a>
+<a class="w-16 h-16 rounded-full bg-surface shadow-sm border border-outline-variant/30 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all duration-300 hover:scale-110" href="#">
+<span class="material-symbols-outlined text-3xl">tag</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface border-t border-outline-variant full-width pt-2xl pb-lg mt-2xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-lg px-gutter max-w-container-max mx-auto mb-xl">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1 flex flex-col items-start">
+<a class="font-headline-md text-primary dark:text-primary-fixed flex items-center gap-xs mb-md" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                    Bonfire Pizza &amp; Kitchen
+                </a>
+<p class="font-body-sm text-on-surface-variant dark:text-on-surface max-w-xs mb-md">
+                    Bringing the warmth of the hearth and the craft of modern gastropub dining straight to your table.
+                </p>
+<div class="flex gap-sm">
+<!-- Social Links from JSON -->
+<a aria-label="Facebook" class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-all hover:scale-110" href="#">
+<span class="material-symbols-outlined">face_nod</span>
+</a>
+<a aria-label="Instagram" class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-all hover:scale-110" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a aria-label="Twitter" class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-all hover:scale-110" href="#">
+<span class="material-symbols-outlined">tag</span>
+</a>
+</div>
+</div>
+<!-- Links Columns -->
+<div class="col-span-1 flex flex-col gap-sm">
+<h4 class="font-headline-sm text-on-surface mb-sm">Menu</h4>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Pizzas</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Starters</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Drinks</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Combos</a>
+</div>
+<div class="col-span-1 flex flex-col gap-sm">
+<h4 class="font-headline-sm text-on-surface mb-sm">About</h4>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Our Story</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Locations</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Contact Us</a>
+</div>
+<!-- Legal/Other Links from JSON -->
+<div class="col-span-1 flex flex-col gap-sm">
+<h4 class="font-headline-sm text-on-surface mb-sm">Legal</h4>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Privacy Policy</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="px-gutter max-w-container-max mx-auto pt-lg border-t border-outline-variant/30 text-center md:text-left">
+<p class="font-body-sm text-on-surface-variant dark:text-on-surface">
+                © 2024 Bonfire Pizza &amp; Kitchen. All rights reserved. Hearth-fired goodness daily.
+            </p>
+</div>
+</footer>
+<script>
+        // Simple mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Add subtle shadow to nav on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-md');
+                nav.classList.remove('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.classList.add('shadow-sm');
+            }
+        });
+</script>
+<script src="../cart.js"></script>
+</body></html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Deals & Bundles - Bonfire Pizza & Kitchen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;600;700;800&amp;family=Manrope:wght@400;500;600&amp;family=Space+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#fffbff",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed": "#1e1b1a",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#ece8de",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#6f4600",
+                        "tertiary-container": "#787372",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#1c1c16",
+                        "on-secondary-fixed": "#2a1800",
+                        "on-background": "#1c1c16",
+                        "primary-fixed-dim": "#ffb4a2",
+                        "surface-container-highest": "#e6e2d8",
+                        "background": "#fdf9ef",
+                        "tertiary-fixed": "#e8e1df",
+                        "on-primary-fixed-variant": "#8a1c00",
+                        "inverse-on-surface": "#f4f0e7",
+                        "surface": "#fdf9ef",
+                        "on-tertiary-fixed-variant": "#4a4645",
+                        "surface-container-low": "#f7f3e9",
+                        "on-primary-fixed": "#3c0700",
+                        "surface-container": "#f1eee4",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#d2421d",
+                        "primary-fixed": "#ffdad2",
+                        "on-primary-container": "#fffbff",
+                        "outline-variant": "#e2bfb6",
+                        "tertiary": "#5f5b5a",
+                        "surface-variant": "#e6e2d8",
+                        "secondary-container": "#ffb13e",
+                        "primary": "#af2903",
+                        "on-secondary-fixed-variant": "#643f00",
+                        "secondary-fixed": "#ffddb5",
+                        "surface-bright": "#fdf9ef",
+                        "inverse-primary": "#ffb4a2",
+                        "secondary": "#845400",
+                        "surface-tint": "#b22b06",
+                        "secondary-fixed-dim": "#ffb958",
+                        "surface-dim": "#dddad0",
+                        "tertiary-fixed-dim": "#ccc5c3",
+                        "on-surface-variant": "#5a413b",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#31312a",
+                        "outline": "#8e7069",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "40px",
+                        "gutter": "20px",
+                        "md": "16px",
+                        "container-max": "1200px",
+                        "lg": "24px",
+                        "2xl": "64px",
+                        "unit": "4px",
+                        "xs": "4px",
+                        "sm": "8px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "price-display": ["Manrope"],
+                        "body-sm": ["Manrope"],
+                        "headline-sm": ["Manrope"],
+                        "label-lg": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "headline-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "price-display": ["22px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .card-hover:hover img {
+            transform: scale(1.05);
+        }
+        .hd-image {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            filter: contrast(1.08) saturate(1.05) brightness(1.02);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="bg-surface dark:bg-surface-dim full-width top-0 sticky shadow-sm z-50 transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<!-- Brand -->
+<a class="font-display-lg text-primary dark:text-primary-fixed tracking-tight flex items-center gap-xs hover:opacity-90 transition-opacity" href="../home/code.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 36px;">local_fire_department</span>
+<span>Bonfire</span>
+</a>
+<!-- Desktop Nav Links -->
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors duration-200 font-label-lg" href="../home/code.html">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors duration-200 font-label-lg" href="../menu/code.html">Menu</a>
+<a class="text-primary hover:text-primary transition-colors duration-200 font-label-lg" href="../Deals/code.html">Deals</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors duration-200 font-label-lg" href="../about/code.html">About</a>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-md">
+<button class="hidden md:flex items-center justify-center bg-primary text-on-primary font-label-lg py-sm px-lg rounded-full hover:bg-surface-tint transition-colors duration-200 shadow-sm">
+                    Order Now
+                </button>
+<button class="cart-trigger text-on-surface hover:text-primary transition-colors duration-200 p-xs relative group">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="cart-badge absolute top-0 right-0 bg-primary text-on-primary text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full transform translate-x-1/4 -translate-y-1/4" style="display: none;">0</span>
+</button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface p-xs" id="mobile-menu-btn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Dropdown (Hidden by default) -->
+<div class="md:hidden hidden bg-surface-container-high absolute top-full left-0 w-full shadow-lg border-t border-outline-variant" id="mobile-menu">
+<div class="flex flex-col px-gutter py-md gap-md">
+<a class="text-on-surface font-label-lg py-xs hover:text-primary" href="../home/code.html">Home</a>
+<a class="text-on-surface font-label-lg py-xs hover:text-primary" href="../menu/code.html">Menu</a>
+<a class="text-primary font-label-lg py-xs" href="../Deals/code.html">Deals</a>
+<a class="text-on-surface font-label-lg py-xs hover:text-primary" href="../about/code.html">About</a>
+<button class="bg-primary text-on-primary font-label-lg py-sm px-lg rounded-full mt-sm w-full">Order Now</button>
+</div>
+</div>
+</nav>
+<main class="pb-2xl">
+<!-- Hero Section -->
+<section class="py-2xl px-gutter max-w-container-max mx-auto text-center relative">
+<div class="absolute inset-0 z-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at center, var(--tw-colors-primary-container) 0%, transparent 70%);"></div>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-md relative z-10">Exclusive Deals & Bundles</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto relative z-10">Gather the crew. Share the warmth with our hand-crafted, wood-fired bundle deals built for sharing.</p>
+</section>
+<!-- Combo Packs Category -->
+<section class="px-gutter max-w-container-max mx-auto mb-2xl">
+<div class="flex items-center justify-between mb-lg border-b border-surface-variant pb-sm">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">COMBO BUNDLES</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Deal Item 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col card-hover border border-surface-container-high group cursor-pointer">
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container relative">
+<img alt="Feast for Two" class="hd-image w-full h-full object-cover transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJDpSE90gRK3uMFU4dk6nc4rm3SEr7KqpsX2Vi6_Pqpk8PG6R8-BvLLsX6J7iHi0CY51nbf2lPLqdRLumWyDpAvk41wdOddd7qgvxtVQCjLbJ1uj4BJh6zSC0OlWQ4NJJqvPIgLus1FwshZC-iJQrzU8xuht72Jtw1lw_DX-5AvC5uBrIT-R_NpKVKtZTK7ti8uoTk-Bk-HIG_pFImxO58un58KDlbkIAAzb2AGCttjpne7meFSMCOILzgR4jurT7xtysQjujaZWNv"/>
+<div class="absolute top-md left-md bg-primary text-on-primary font-label-lg text-xs px-2 py-1 rounded-sm shadow-sm">Save Rs. 400</div>
+</div>
+<div class="p-md flex-grow flex flex-col justify-between bg-[#fdfaf4]">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs group-hover:text-primary transition-colors">BONFIRE FEAST FOR 2</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">1 Medium Wood-Fired Pizza, 1 Starter Chicken Sandwich or Macaroni, 2 Soft Drinks, and Garlic Bread.</p>
+</div>
+<div class="mt-md flex justify-between items-end">
+<span class="font-price-display text-price-display text-primary">Rs.2400</span>
+<button aria-label="Add to cart" class="add-to-cart-btn text-primary hover:bg-primary-container hover:text-on-primary-container p-sm rounded-full transition-colors" data-name="Bonfire Feast for 2" data-price="2400">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Deal Item 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col card-hover border border-surface-container-high group cursor-pointer">
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container relative">
+<img alt="Twin Medium Deal" class="hd-image w-full h-full object-cover transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2b8dYi3PsqZE_73zNH7zWTfOH4b24RPzTWLly73Z2DOwC_nCAnsRmmb17r_8An_j1QASOfjKMnoS7UqNaYV-QH-OOyH3GpbsNU14oQTbdTE93nPrZwvoZVDOTPVX8Ra6uYU17hFOujUghQ3KdPmATMkj7hofNqRNX80jOyyXbEfmvpEH7wB5KPj78zVW67iCG9i7_-fhhnvgieb2RCIXyC9QyEoOx8MOFnfXXLr_75nNE9cMZ5eyjoTIviYNBmbD_pNbEoyVEe0b5"/>
+<div class="absolute top-md left-md bg-primary text-on-primary font-label-lg text-xs px-2 py-1 rounded-sm shadow-sm">Save Rs. 500</div>
+</div>
+<div class="p-md flex-grow flex flex-col justify-between bg-[#fdfaf4]">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs group-hover:text-primary transition-colors">TWIN MEDIUM SPECIAL</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">Choose any two Medium Hearth-Baked Pizzas of your choice. Great for friendly gatherings.</p>
+</div>
+<div class="mt-md flex justify-between items-end">
+<span class="font-price-display text-price-display text-primary">Rs.1800</span>
+<button aria-label="Add to cart" class="add-to-cart-btn text-primary hover:bg-primary-container hover:text-on-primary-container p-sm rounded-full transition-colors" data-name="Twin Medium Special" data-price="1800">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Deal Item 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col card-hover border border-surface-container-high group cursor-pointer">
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container relative">
+<img alt="Family Flame Bundle" class="hd-image w-full h-full object-cover transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxcNT_jDOnWdqCu8qPAkZko6UOvVNrcrrA7tEl1Upp4Rp2KeJijsoLsk06mSJhGO5sMqJmHn5FDiR6ea1dGa216qC6PWJIs9ppe_sH87D27Qwn7uaaIbzJcviKHtsdWBqWffb6TMf6tpXpKbCNEgbUyJrgYNmHrZafN-RWr3KthB44xmkflDVzf8jsyDANZn70pdUwdyKe_FG9Zn4qFFj6Edpk4cZ7eReHzQrraksj35sxfa3g1myMvPqoKhFmVCRVgDvJfrP9F26H"/>
+<div class="absolute top-md left-md bg-primary text-on-primary font-label-lg text-xs px-2 py-1 rounded-sm shadow-sm">Save Rs. 800</div>
+</div>
+<div class="p-md flex-grow flex flex-col justify-between bg-[#fdfaf4]">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs group-hover:text-primary transition-colors">FAMILY FLAME BUNDLE</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">2 Large Pizzas, 1 Starter Special Platter, and 1.5L soft drink. Perfect for a family dinner.</p>
+</div>
+<div class="mt-md flex justify-between items-end">
+<span class="font-price-display text-price-display text-primary">Rs.4200</span>
+<button aria-label="Add to cart" class="add-to-cart-btn text-primary hover:bg-primary-container hover:text-on-primary-container p-sm rounded-full transition-colors" data-name="Family Flame Bundle" data-price="4200">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Weekday Specials Category -->
+<section class="px-gutter max-w-container-max mx-auto mb-2xl pt-lg">
+<div class="bg-inverse-surface rounded-xl p-md mb-lg flex justify-between items-center text-on-tertiary-fixed shadow-md">
+<h2 class="font-headline-lg text-headline-lg text-inverse-on-surface tracking-wide">WEEKDAY DEALS</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-lg">
+<!-- Deal 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col card-hover border border-surface-container-high group cursor-pointer">
+<div class="aspect-square w-full p-lg flex items-center justify-center bg-surface relative">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-colors-surface-variant)_0%,_transparent_70%)] opacity-30"></div>
+<img alt="Midweek Madness" class="hd-image w-full h-full object-contain drop-shadow-xl transition-transform duration-500 z-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_EbYiCPNZ-oiQujWDrwoODAafCAD3KJYHR1Jiy6Gl8AhT2IKXcI5-NnxoeKrMmJF5YYl-xS0aIaKvdYYnccd-zYQUqTtobCrTtsQGukG2bKLlogCJmYPyTI1TdUi48UeB8spoZvOud42oOUsivZzzSEaXfv-JyN97Yu3wP62x9WxQfsUJ_wBZ_zCRJZ7sIkEpS0g9PafefTXxGvUMmHcdWf2JEle5ZDoFl1iMNvtfcDGR9JOFxUNxQYd2gqV4j9tOc8JMwW-gvIMg"/>
+</div>
+<div class="p-md flex-grow flex flex-col justify-between text-center border-t border-surface-container">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs group-hover:text-primary transition-colors">MIDWEEK MADNESS</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant px-sm mb-sm">Get a FREE Medium Margherita pizza with every Large Pizza ordered on Tuesdays & Wednesdays.</p>
+</div>
+<div class="flex justify-between items-center mt-auto px-md">
+<span class="font-price-display text-primary text-sm font-bold">Rs.1600</span>
+<button class="add-to-cart-btn text-primary hover:bg-primary-container hover:text-on-primary-container p-sm rounded-full transition-colors" data-name="Midweek Madness Deal" data-price="1600">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Deal 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col card-hover border border-surface-container-high group cursor-pointer">
+<div class="aspect-square w-full p-lg flex items-center justify-center bg-surface relative">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-colors-surface-variant)_0%,_transparent_70%)] opacity-30"></div>
+<img alt="Solo Burn Lunch" class="hd-image w-full h-full object-contain drop-shadow-xl transition-transform duration-500 z-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1av4qTP1mFi-8nMWFqpzDr_-ZI8ioF5atXwTN1IVtrn791N-tqpaGCYOrM3jsYZXOmNGlc6FxILKJygxTSTLJWqSsEMEN5_yQnmfkjoWqBvWWkhUSlZw3ugsY1tS-sjavttXnA7KCCfZWtHP_XAUq_v0bwXEPP5p-U-OerShlFYeQDHTbYkZdkROrCPqJa2Ive3vE7nMJf7CyZXEyNHsPjE573kHkMEqBcUCM9dwB75jtin8FSSePEkySEoa75Uxq6_slQCIr7uTQ"/>
+</div>
+<div class="p-md flex-grow flex flex-col justify-between text-center border-t border-surface-container">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs group-hover:text-primary transition-colors">SOLO BURN DEAL</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant px-sm mb-sm">1 Small Pizza, Garlic Bread slices, and a soft drink. Perfect lunch break companion.</p>
+</div>
+<div class="flex justify-between items-center mt-auto px-md">
+<span class="font-price-display text-primary text-sm font-bold">Rs.850</span>
+<button class="add-to-cart-btn text-primary hover:bg-primary-container hover:text-on-primary-container p-sm rounded-full transition-colors" data-name="Solo Burn Deal" data-price="850">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Deal 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col card-hover border border-surface-container-high group cursor-pointer">
+<div class="aspect-square w-full p-lg flex items-center justify-center bg-surface relative">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-colors-surface-variant)_0%,_transparent_70%)] opacity-30"></div>
+<img alt="Late Night Crust" class="hd-image w-full h-full object-contain drop-shadow-xl transition-transform duration-500 z-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG6hFvocdLauVzayzFsbGGkqm3C5EslDXtWW2yK8IEcQ2L-WkZhTVBjvOjx59TDrtkmORIhQJ8KyfCKMTn6Ekr9jsAurtCPeN2ry4RwoHhmSx1JWgEKlXk1OX7dxKXbd7dfGZsCu6jg5QLYscjTGqVgvQq5Fvs2L8mweO7nWL7cDDG876ZGNQnby1Z4ioSew_8mEElkTJmzEAUiKNNyWdhGqpzuBUNLZJImjmbW7jjOhAtGy5C2PmalCecI--ggKj9k5XGTlQSN0OT"/>
+</div>
+<div class="p-md flex-grow flex flex-col justify-between text-center border-t border-surface-container">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs group-hover:text-primary transition-colors">LATE NIGHT CRUST</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant px-sm mb-sm">Enjoy 25% off on all large wood-fired pizzas ordered after 10:00 PM on Weekends.</p>
+</div>
+<div class="flex justify-between items-center mt-auto px-md">
+<span class="font-price-display text-primary text-sm font-bold">Rs.1200</span>
+<button class="add-to-cart-btn text-primary hover:bg-primary-container hover:text-on-primary-container p-sm rounded-full transition-colors" data-name="Late Night Crust Deal" data-price="1200">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface border-t border-outline-variant full-width pt-2xl pb-lg mt-2xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-lg px-gutter max-w-container-max mx-auto mb-xl">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1 flex flex-col items-start">
+<a class="font-headline-md text-primary dark:text-primary-fixed flex items-center gap-xs mb-md" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                    Bonfire Pizza &amp; Kitchen
+                </a>
+<p class="font-body-sm text-on-surface-variant dark:text-on-surface max-w-xs mb-md">
+                    Bringing the warmth of the hearth and the craft of modern gastropub dining straight to your table.
+                </p>
+<div class="flex gap-sm">
+<!-- Social Links from JSON -->
+<a aria-label="Facebook" class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-all hover:scale-110" href="#">
+<span class="material-symbols-outlined">face_nod</span>
+</a>
+<a aria-label="Instagram" class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-all hover:scale-110" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a aria-label="Twitter" class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-all hover:scale-110" href="#">
+<span class="material-symbols-outlined">tag</span>
+</a>
+</div>
+</div>
+<!-- Links Columns -->
+<div class="col-span-1 flex flex-col gap-sm">
+<h4 class="font-headline-sm text-on-surface mb-sm">Menu</h4>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Pizzas</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Starters</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Drinks</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Combos</a>
+</div>
+<div class="col-span-1 flex flex-col gap-sm">
+<h4 class="font-headline-sm text-on-surface mb-sm">About</h4>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Our Story</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Locations</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Contact Us</a>
+</div>
+<!-- Legal/Other Links from JSON -->
+<div class="col-span-1 flex flex-col gap-sm">
+<h4 class="font-headline-sm text-on-surface mb-sm">Legal</h4>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Privacy Policy</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="px-gutter max-w-container-max mx-auto pt-lg border-t border-outline-variant/30 text-center md:text-left">
+<p class="font-body-sm text-on-surface-variant dark:text-on-surface">
+                © 2024 Bonfire Pizza &amp; Kitchen. All rights reserved. Hearth-fired goodness daily.
+            </p>
+</div>
+</footer>
+<script>
+        // Simple mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Add subtle shadow to nav on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-md');
+                nav.classList.remove('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.classList.add('shadow-sm');
+            }
+        });
+</script>
+<script src="../cart.js"></script>
+</body></html>

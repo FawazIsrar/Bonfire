@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bonfire Pizza &amp; Kitchen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&amp;family=Manrope:wght@200..800&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#fffbff",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed": "#1e1b1a",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#ece8de",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#6f4600",
+                        "tertiary-container": "#787372",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#1c1c16",
+                        "on-secondary-fixed": "#2a1800",
+                        "on-background": "#1c1c16",
+                        "primary-fixed-dim": "#ffb4a2",
+                        "surface-container-highest": "#e6e2d8",
+                        "background": "#fdf9ef",
+                        "tertiary-fixed": "#e8e1df",
+                        "on-primary-fixed-variant": "#8a1c00",
+                        "inverse-on-surface": "#f4f0e7",
+                        "surface": "#fdf9ef",
+                        "on-tertiary-fixed-variant": "#4a4645",
+                        "surface-container-low": "#f7f3e9",
+                        "on-primary-fixed": "#3c0700",
+                        "surface-container": "#f1eee4",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#d2421d",
+                        "primary-fixed": "#ffdad2",
+                        "on-primary-container": "#fffbff",
+                        "outline-variant": "#e2bfb6",
+                        "tertiary": "#5f5b5a",
+                        "surface-variant": "#e6e2d8",
+                        "secondary-container": "#ffb13e",
+                        "primary": "#af2903",
+                        "on-secondary-fixed-variant": "#643f00",
+                        "secondary-fixed": "#ffddb5",
+                        "surface-bright": "#fdf9ef",
+                        "inverse-primary": "#ffb4a2",
+                        "secondary": "#845400",
+                        "surface-tint": "#b22b06",
+                        "secondary-fixed-dim": "#ffb958",
+                        "surface-dim": "#dddad0",
+                        "tertiary-fixed-dim": "#ccc5c3",
+                        "on-surface-variant": "#5a413b",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#31312a",
+                        "outline": "#8e7069",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "40px",
+                        "gutter": "20px",
+                        "md": "16px",
+                        "container-max": "1200px",
+                        "lg": "24px",
+                        "2xl": "64px",
+                        "unit": "4px",
+                        "xs": "4px",
+                        "sm": "8px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "price-display": ["Manrope"],
+                        "body-sm": ["Manrope"],
+                        "headline-sm": ["Manrope"],
+                        "label-lg": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "headline-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "price-display": ["22px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .text-shadow-hero {
+            text-shadow: 0 4px 24px rgba(0,0,0,0.4);
+        }
+        #hero-canvas {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            filter: contrast(1.12) saturate(1.08) brightness(1.02) blur(0px);
+            transition: filter 0.15s ease-out;
+        }
+        .hd-image {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            filter: contrast(1.08) saturate(1.05) brightness(1.02);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="bg-surface dark:bg-surface-dim full-width top-0 sticky shadow-sm z-50 transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<!-- Brand -->
+<a class="font-display-lg text-primary dark:text-primary-fixed tracking-tight flex items-center gap-xs hover:opacity-90 transition-opacity" href="../home/code.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 36px;">local_fire_department</span>
+<span>Bonfire</span>
+</a>
+<!-- Desktop Nav Links -->
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-primary hover:text-primary transition-colors duration-200 font-label-lg" href="../home/code.html">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors duration-200 font-label-lg" href="../menu/code.html">Menu</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors duration-200 font-label-lg" href="../Deals/code.html">Deals</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors duration-200 font-label-lg" href="../about/code.html">About</a>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-md">
+<button class="hidden md:flex items-center justify-center bg-primary text-on-primary font-label-lg py-sm px-lg rounded-full hover:bg-surface-tint transition-colors duration-200 shadow-sm">
+                    Order Now
+                </button>
+<button class="cart-trigger text-on-surface hover:text-primary transition-colors duration-200 p-xs relative group">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="cart-badge absolute top-0 right-0 bg-primary text-on-primary text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full transform translate-x-1/4 -translate-y-1/4" style="display: none;">0</span>
+</button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface p-xs" id="mobile-menu-btn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Dropdown (Hidden by default) -->
+<div class="md:hidden hidden bg-surface-container-high absolute top-full left-0 w-full shadow-lg border-t border-outline-variant" id="mobile-menu">
+<div class="flex flex-col px-gutter py-md gap-md">
+<a class="text-primary font-label-lg py-xs" href="../home/code.html">Home</a>
+<a class="text-on-surface font-label-lg py-xs hover:text-primary" href="../menu/code.html">Menu</a>
+<a class="text-on-surface font-label-lg py-xs hover:text-primary" href="../Deals/code.html">Deals</a>
+<a class="text-on-surface font-label-lg py-xs hover:text-primary" href="../about/code.html">About</a>
+<button class="bg-primary text-on-primary font-label-lg py-sm px-lg rounded-full mt-sm w-full">Order Now</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Scroll Container (Creates the scroll depth) -->
+<div id="hero-scroll-container" class="relative w-full bg-surface-variant" style="height: calc(100vh + 200px);">
+    <!-- Sticky wrapper to pin the canvas and content in viewport -->
+    <div class="sticky top-0 w-full h-screen overflow-hidden flex items-center justify-center">
+        <!-- Canvas rendering our 270 frames -->
+        <canvas id="hero-canvas" class="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"></canvas>
+        <div class="absolute inset-0 bg-gradient-to-t from-background via-black/40 to-black/20 z-0"></div>
+        
+        <!-- Content (fades out as we scroll) -->
+        <div id="hero-content" class="relative z-10 max-w-container-max mx-auto px-gutter text-center flex flex-col items-center transition-all duration-100 ease-out">
+            <div class="inline-flex items-center gap-xs bg-surface-container-lowest/20 backdrop-blur-md border border-white/20 text-white px-md py-xs rounded-full mb-lg font-label-lg uppercase tracking-wider text-sm shadow-sm">
+                <span class="material-symbols-outlined text-[16px]">local_fire_department</span>
+                Wood-Fired Daily
+            </div>
+            <h1 class="font-display-lg text-white mb-md text-shadow-hero max-w-3xl leading-tight">
+                Hearth-Fired Goodness, <br class="hidden md:block"/> Crafted for the Soul.
+            </h1>
+            <p class="font-body-lg text-white/90 mb-xl max-w-xl text-shadow-hero">
+                Experience artisanal pizzas and gastropub classics born from real fire. Social, flavorful, and unforgettable.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-md w-full sm:w-auto">
+                <a class="bg-primary text-on-primary font-label-lg py-3 px-8 rounded-full hover:bg-surface-tint hover:-translate-y-0.5 transition-all duration-300 shadow-md flex items-center justify-center gap-sm group" href="../menu/code.html">
+                    View Menu
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </a>
+                <a class="bg-transparent border-2 border-white text-white font-label-lg py-3 px-8 rounded-full hover:bg-white/10 transition-colors duration-300 flex items-center justify-center" href="../about/code.html">
+                    Find a Table
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div id="hero-scroll-indicator" class="absolute bottom-lg left-1/2 -translate-x-1/2 text-white/70 animate-bounce z-10 transition-opacity duration-100 ease-out">
+            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </div>
+    </div>
+</div>
+<!-- Signature Pizzas Section (Bento Grid) -->
+<section class="py-2xl px-gutter max-w-container-max mx-auto" id="menu">
+<div class="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
+<div>
+<h2 class="font-headline-lg text-on-surface mb-xs flex items-center gap-sm">
+                        Signature Pizzas
+                        <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+</h2>
+<p class="font-body-md text-on-surface-variant max-w-2xl">Our chef's masterpieces, hand-tossed and kissed by the flames.</p>
+</div>
+<a class="text-primary font-label-lg flex items-center gap-xs hover:underline group" href="#">
+                    See Full Menu <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+<!-- Bento Layout -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md md:gap-lg auto-rows-[minmax(300px,auto)]">
+<!-- Featured Large Item -->
+<div class="md:col-span-2 md:row-span-2 rounded-xl overflow-hidden relative group cursor-pointer bg-surface-container shadow-[0px_4px_20px_rgba(43,40,39,0.05)] border border-surface-container-high transition-transform duration-300 hover:shadow-lg">
+<div class="hd-image absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A tall, mobile-optimized vertical photo of a rustic gourmet pizza loaded with fresh basil, bubbling mozzarella, and blistered cherry tomatoes resting on a dark wooden cutting board. The scene is brightly lit with a warm, inviting gastropub aesthetic, emphasizing the tactile textures of the crust and vibrant colors of the toppings against a minimalist background." style="background-image: url('../img/The Inferno Margherita.png');"></div>
+<!-- Gradient overlay for text readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-lg w-full">
+<div class="flex justify-between items-end mb-sm">
+<h3 class="font-headline-md text-white">The Inferno Margherita</h3>
+<span class="font-price-display text-primary-fixed bg-black/50 backdrop-blur-sm px-3 py-1 rounded-full">$18</span>
+</div>
+<p class="font-body-sm text-white/80 max-w-md line-clamp-2 mb-md">San Marzano tomato base, fresh buffalo mozzarella, torn basil, and a drizzle of hot honey straight from the hearth.</p>
+<button class="add-to-cart-btn bg-primary text-on-primary font-label-lg py-2 px-4 rounded-full text-sm opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300" data-name="The Inferno Margherita" data-price="18">Add to Order</button>
+</div>
+</div>
+<!-- Standard Item 1 -->
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0px_4px_20px_rgba(43,40,39,0.05)] flex flex-col group cursor-pointer border border-surface-container-high hover:-translate-y-1 transition-transform duration-300">
+<div class="h-48 overflow-hidden relative bg-surface-variant">
+<!-- Fallback Pattern if no image -->
+<div class="hd-image absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('../img/truffle forest pizza.png');"></div>
+<div class="absolute top-md right-md bg-surface text-on-surface font-label-lg text-xs px-2 py-1 rounded-sm shadow-sm flex items-center gap-xs">
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">eco</span> Vegetarian
+                        </div>
+</div>
+<div class="p-md flex-1 flex flex-col">
+<h3 class="font-headline-sm text-on-surface mb-xs">Truffle Forest</h3>
+<p class="font-body-sm text-on-surface-variant flex-1 mb-md">Wild mushrooms, truffle cream base, caramelized onions, finished with arugula.</p>
+<div class="flex justify-between items-center mt-auto">
+<span class="font-price-display text-primary">$22</span>
+<button class="add-to-cart-btn text-primary hover:bg-primary-container/10 p-2 rounded-full transition-colors" data-name="Truffle Forest" data-price="22">
+<span class="material-symbols-outlined">add_circle</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Standard Item 2 -->
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0px_4px_20px_rgba(43,40,39,0.05)] flex flex-col group cursor-pointer border border-surface-container-high hover:-translate-y-1 transition-transform duration-300">
+<div class="h-48 overflow-hidden relative bg-surface-variant">
+<!-- Fallback Pattern -->
+<div class="hd-image absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('../img/Smoked Carnivore.png');"></div>
+</div>
+<div class="p-md flex-1 flex flex-col">
+<h3 class="font-headline-sm text-on-surface mb-xs">Smoked Carnivore</h3>
+<p class="font-body-sm text-on-surface-variant flex-1 mb-md">House-smoked brisket, pepperoni, spicy sausage, red onion, BBQ drizzle.</p>
+<div class="flex justify-between items-center mt-auto">
+<span class="font-price-display text-primary">$25</span>
+<button class="add-to-cart-btn text-primary hover:bg-primary-container/10 p-2 rounded-full transition-colors" data-name="Smoked Carnivore" data-price="25">
+<span class="material-symbols-outlined">add_circle</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Money Saving Deals (Asymmetric Layout) -->
+<section class="py-2xl px-gutter max-w-container-max mx-auto">
+<div class="bg-secondary-fixed rounded-2xl overflow-hidden relative shadow-lg">
+<!-- Decorative background elements -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-secondary-fixed-dim rounded-full blur-3xl opacity-50"></div>
+<div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-secondary/10 to-transparent"></div>
+<div class="flex flex-col md:flex-row items-stretch relative z-10">
+<!-- Image Side -->
+<div class="w-full md:w-2/5 h-64 md:h-auto relative min-h-[300px]">
+<!-- Using object-cover to handle the tall aspect ratio gracefully in this horizontal layout -->
+<img alt="Promotional Deal" class="hd-image absolute inset-0 w-full h-full object-cover object-center shadow-[10px_0_30px_rgba(0,0,0,0.1)] z-10 clip-path-slant hidden md:block" src="../img/Deal.png" style="clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);"/>
+<!-- Mobile fallback image without slant -->
+<img alt="Promotional Deal" class="hd-image absolute inset-0 w-full h-full object-cover object-center md:hidden" src="../img/Deal.png"/>
+</div>
+<!-- Content Side -->
+<div class="w-full md:w-3/5 p-lg md:p-xl flex flex-col justify-center">
+<div class="inline-flex items-center gap-xs bg-primary text-on-primary font-label-lg px-3 py-1 rounded-sm w-max mb-md shadow-sm">
+<span class="material-symbols-outlined text-[16px]">local_offer</span>
+                            Limited Time
+                        </div>
+<h2 class="font-display-lg text-on-secondary-fixed mb-sm leading-tight">
+                            Money Saving Deals
+                        </h2>
+<p class="font-body-lg text-on-secondary-fixed-variant mb-lg max-w-md">
+                            Gather the crew. Grab a "Bonfire Bundle" and enjoy our signature pizzas paired with hearth-baked sides at a fraction of the cost.
+                        </p>
+<div class="flex flex-wrap gap-md mt-auto">
+<button class="bg-on-secondary-fixed text-secondary-fixed font-label-lg py-3 px-6 rounded-full hover:bg-secondary transition-colors shadow-md">
+                                Claim Offer
+                            </button>
+<button class="bg-transparent border-2 border-on-secondary-fixed/20 text-on-secondary-fixed font-label-lg py-3 px-6 rounded-full hover:bg-on-secondary-fixed/5 transition-colors">
+                                View All Deals
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Info / Trust Bar -->
+<section class="py-xl bg-surface border-y border-surface-container-high mt-lg">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-2 md:grid-cols-4 gap-lg text-center divide-x divide-surface-container-high/50">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-3xl mb-sm" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<h4 class="font-headline-sm text-on-surface">Wood-Fired</h4>
+<p class="font-body-sm text-on-surface-variant mt-1">Authentic 800° oven</p>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-3xl mb-sm" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+<h4 class="font-headline-sm text-on-surface">Fast Delivery</h4>
+<p class="font-body-sm text-on-surface-variant mt-1">Hot to your door</p>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-3xl mb-sm" style="font-variation-settings: 'FILL' 1;">eco</span>
+<h4 class="font-headline-sm text-on-surface">Fresh Ingredients</h4>
+<p class="font-body-sm text-on-surface-variant mt-1">Locally sourced daily</p>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-3xl mb-sm" style="font-variation-settings: 'FILL' 1;">storefront</span>
+<h4 class="font-headline-sm text-on-surface">3 Locations</h4>
+<p class="font-body-sm text-on-surface-variant mt-1">Find a spot near you</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface border-t border-outline-variant full-width pt-2xl pb-lg mt-2xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-lg px-gutter max-w-container-max mx-auto mb-xl">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1 flex flex-col items-start">
+<a class="font-headline-md text-primary dark:text-primary-fixed flex items-center gap-xs mb-md" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                    Bonfire Pizza &amp; Kitchen
+                </a>
+<p class="font-body-sm text-on-surface-variant dark:text-on-surface max-w-xs mb-md">
+                    Bringing the warmth of the hearth and the craft of modern gastropub dining straight to your table.
+                </p>
+<div class="flex gap-sm">
+<!-- Social Links from JSON -->
+<a aria-label="Facebook" class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-all hover:scale-110" href="#">
+<span class="material-symbols-outlined">face_nod</span>
+</a>
+<a aria-label="Instagram" class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-all hover:scale-110" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a aria-label="Twitter" class="text-on-surface-variant dark:text-on-surface hover:text-primary transition-all hover:scale-110" href="#">
+<span class="material-symbols-outlined">tag</span>
+</a>
+</div>
+</div>
+<!-- Links Columns -->
+<div class="col-span-1 flex flex-col gap-sm">
+<h4 class="font-headline-sm text-on-surface mb-sm">Menu</h4>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Pizzas</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Starters</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Drinks</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Combos</a>
+</div>
+<div class="col-span-1 flex flex-col gap-sm">
+<h4 class="font-headline-sm text-on-surface mb-sm">About</h4>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Our Story</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Locations</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Contact Us</a>
+</div>
+<!-- Legal/Other Links from JSON -->
+<div class="col-span-1 flex flex-col gap-sm">
+<h4 class="font-headline-sm text-on-surface mb-sm">Legal</h4>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Privacy Policy</a>
+<a class="font-body-sm text-on-surface-variant dark:text-on-surface hover:text-primary underline transition-all" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="px-gutter max-w-container-max mx-auto pt-lg border-t border-outline-variant/30 text-center md:text-left">
+<p class="font-body-sm text-on-surface-variant dark:text-on-surface">
+                © 2024 Bonfire Pizza &amp; Kitchen. All rights reserved. Hearth-fired goodness daily.
+            </p>
+</div>
+</footer>
+<script>
+        // Simple mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Add subtle shadow to nav on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-md');
+                nav.classList.remove('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.classList.add('shadow-sm');
+            }
+        });
+
+        // Canvas Scroll Animation logic
+        const frameCount = 270;
+        const images = [];
+        const canvas = document.getElementById('hero-canvas');
+        const ctx = canvas.getContext('2d');
+        const heroContainer = document.getElementById('hero-scroll-container');
+        const heroContent = document.getElementById('hero-content');
+        const heroIndicator = document.getElementById('hero-scroll-indicator');
+
+        // Create frame URL helper (using relative path to animation folder)
+        function currentFrame(index) {
+            const paddedIndex = String(index).padStart(3, '0');
+            return `../animation/ezgif-frame-${paddedIndex}.jpg`;
+        }
+
+        // Draw Image Covering Canvas
+        function drawImageCover(img) {
+            if (!img) return;
+            const canvasWidth = canvas.width;
+            const canvasHeight = canvas.height;
+            const imgWidth = img.naturalWidth || img.width;
+            const imgHeight = img.naturalHeight || img.height;
+            if (!imgWidth || !imgHeight) return;
+
+            const imgRatio = imgWidth / imgHeight;
+            const canvasRatio = canvasWidth / canvasHeight;
+
+            let drawWidth, drawHeight, drawX, drawY;
+
+            if (imgRatio > canvasRatio) {
+                drawHeight = canvasHeight;
+                drawWidth = canvasHeight * imgRatio;
+                drawX = (canvasWidth - drawWidth) / 2;
+                drawY = 0;
+            } else {
+                drawWidth = canvasWidth;
+                drawHeight = canvasWidth / imgRatio;
+                drawX = 0;
+                drawY = (canvasHeight - drawHeight) / 2;
+            }
+
+            ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+            ctx.drawImage(img, drawX, drawY, drawWidth, drawHeight);
+        }
+
+        // Handle Canvas Resize
+        function resizeCanvas() {
+            const dpr = window.devicePixelRatio || 1;
+            canvas.width = canvas.clientWidth * dpr;
+            canvas.height = canvas.clientHeight * dpr;
+            ctx.setTransform(1, 0, 0, 1, 0, 0);
+
+            // Redraw current frame
+            const progress = getScrollProgress();
+            const frameIndex = Math.min(frameCount - 1, Math.floor(progress * frameCount));
+            if (images[frameIndex]) {
+                drawImageCover(images[frameIndex]);
+            }
+        }
+
+        // Calculate progress of scroll section
+        function getScrollProgress() {
+            const rect = heroContainer.getBoundingClientRect();
+            const scrollableHeight = rect.height - window.innerHeight;
+            if (scrollableHeight <= 0) return 0;
+            const progress = -rect.top / scrollableHeight;
+            return Math.min(1, Math.max(0, progress));
+        }
+
+        let lastFrameIndex = -1;
+        let lastScrollY = window.scrollY;
+        let lastScrollTime = Date.now();
+        let blurTimeout = null;
+
+        function updateAnimation() {
+            const progress = getScrollProgress();
+            
+            // Advance animation frames
+            const frameIndex = Math.min(frameCount - 1, Math.floor(progress * frameCount));
+            if (frameIndex !== lastFrameIndex && images[frameIndex]) {
+                drawImageCover(images[frameIndex]);
+                lastFrameIndex = frameIndex;
+            }
+
+            // Fade out hero text overlay as we scroll down
+            const fadeStart = 0.0;
+            const fadeEnd = 0.45; // Fade out completely at 45% scroll progress
+            if (progress <= fadeStart) {
+                heroContent.style.opacity = 1;
+                heroContent.style.transform = 'translateY(0)';
+                heroIndicator.style.opacity = 1;
+            } else if (progress >= fadeEnd) {
+                heroContent.style.opacity = 0;
+                heroContent.style.transform = 'translateY(-20px)';
+                heroIndicator.style.opacity = 0;
+            } else {
+                const ratio = (progress - fadeStart) / (fadeEnd - fadeStart);
+                heroContent.style.opacity = 1 - ratio;
+                heroContent.style.transform = `translateY(${-ratio * 20}px)`;
+                heroIndicator.style.opacity = 1 - ratio;
+            }
+
+            // Calculate scroll velocity and apply motion blur
+            const currentScrollY = window.scrollY;
+            const currentTime = Date.now();
+            const deltaY = Math.abs(currentScrollY - lastScrollY);
+            const deltaTime = Math.max(1, currentTime - lastScrollTime);
+            const velocity = deltaY / deltaTime; // px/ms
+            
+            const blurAmount = Math.min(4, velocity * 2);
+            canvas.style.filter = `contrast(1.12) saturate(1.08) brightness(1.02) blur(${blurAmount}px)`;
+            
+            lastScrollY = currentScrollY;
+            lastScrollTime = currentTime;
+
+            if (blurTimeout) clearTimeout(blurTimeout);
+            blurTimeout = setTimeout(() => {
+                canvas.style.filter = 'contrast(1.12) saturate(1.08) brightness(1.02) blur(0px)';
+            }, 150);
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        window.addEventListener('scroll', () => {
+            updateAnimation();
+        });
+
+        // Preload and Start
+        async function initHeroAnimation() {
+            // Setup canvas size
+            canvas.width = canvas.clientWidth;
+            canvas.height = canvas.clientHeight;
+
+            // Preload frames in background
+            let loaded = 0;
+            for (let i = 1; i <= frameCount; i++) {
+                const img = new Image();
+                img.src = currentFrame(i);
+                img.onload = () => {
+                    loaded++;
+                    if (loaded === 1 || i === 1) {
+                        // Draw first frame immediately
+                        drawImageCover(img);
+                    }
+                    if (loaded === frameCount) {
+                        resizeCanvas();
+                    }
+                };
+                images.push(img);
+            }
+        }
+
+        initHeroAnimation();
+    </script>
+    <script src="../cart.js"></script>
+</body></html>
